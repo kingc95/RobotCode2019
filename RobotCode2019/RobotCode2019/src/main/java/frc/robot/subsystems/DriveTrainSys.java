@@ -29,7 +29,7 @@ public class DriveTrainSys extends Subsystem {
         //Flips Motor Polarity on Right Side to use same values as left side.
         m_drive.setRightSideInverted(true);
         //Front and Back Axis = 0, Turning Axis = 1
-        m_drive.arcadeDrive(Robot.m_oi.driver.getRawAxis(0), Robot.m_oi.driver.getRawAxis(1));
+        m_drive.arcadeDrive(Robot.m_oi.driver1.getRawAxis(0), Robot.m_oi.driver1.getRawAxis(1));
     }
 
     public void tankDrive(){
@@ -41,7 +41,7 @@ public class DriveTrainSys extends Subsystem {
         //Flips Motor Polarity on Right Side to use same values as left side.
         m_drive.setRightSideInverted(true);
         //Uses Both Joysticks X Axis or needs 2 joysticks just for driver
-        m_drive.tankDrive(Robot.m_oi.driver.getRawAxis(0), Robot.m_oi.driver.getRawAxis(1));
+        m_drive.tankDrive(Robot.m_oi.driver1.getRawAxis(0), Robot.m_oi.driver2.getRawAxis(0));
     }
 
     public void stop(){

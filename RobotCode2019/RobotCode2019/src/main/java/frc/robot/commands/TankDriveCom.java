@@ -10,12 +10,12 @@ public class TankDriveCom extends Command {
 
   @Override
   protected void initialize() {
-      Robot.driveTrainSys.tankDrive();
+      
   }
 
   @Override
   protected void execute() {
-
+    Robot.driveTrainSys.tankDrive();
   }
 
   @Override

@@ -11,12 +11,12 @@ public class ArcadeDriveCom extends Command {
 
   @Override
   protected void initialize() {
-      Robot.driveTrainSys.arcadeDrive();
+      
   }
 
   @Override
   protected void execute() {
-
+    Robot.driveTrainSys.arcadeDrive();
   }
 
   @Override
